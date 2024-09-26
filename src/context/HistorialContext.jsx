@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 const HistorialContext = createContext();
 
 export const HistorialProvider = ({ children }) => {
-  const [historial, setHistorial] = useState(JSON.parse(localStorage.getItem('historialConsultas')) || []);
+  const [historial, setHistorial] = useState([]);
 
   return (
     <HistorialContext.Provider value={{ historial, setHistorial }}>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ClimaDetalle = ({ clima }) => {
   return (
-    <table>
+    <table className="tabla-clima">
       <thead>
         <tr>
           <th>Temperatura</th>
